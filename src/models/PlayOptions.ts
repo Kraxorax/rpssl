@@ -25,13 +25,6 @@ export const scissors = {
   caption: 'Message Sisko to send the Cardassian tailor.'
 } as const
 
-export const spock = {
-  id: 5,
-  name: 'spock',
-  imageURL: imgSpock,
-  caption: 'Advise with Spock on the situation.'
-} as const
-
 export const lizard = {
   id: 4,
   name: 'lizard',
@@ -39,7 +32,14 @@ export const lizard = {
   caption: 'Lizard man will scare him away.'
 } as const
 
+export const spock = {
+  id: 5,
+  name: 'spock',
+  imageURL: imgSpock,
+  caption: 'Advise with Spock on the situation.'
+} as const
 
-export const playOptions = [rock, paper, scissors, spock, lizard]
+
+export const playOptions = [rock, paper, scissors, lizard, spock]
 
 export type PlayOption = typeof playOptions[number]
